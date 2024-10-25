@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Georgian Restaurant - Order</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Order Section -->
+  <section id="order" class="order">
+    <h2>Order Your Favorite Dish</h2>
+    <form id="order-form">
+      <label for="dish">Select Dish:</label>
+      <select id="dish" name="dish">
+        <option value="Pizza">Pizza - $10</option>
+        <option value="Khachapuri">Khachapuri - $12</option>
+        <option value="Khinkali">Khinkali - $8</option>
+      </select>
+
+      <label for="quantity">Quantity:</label>
+      <input type="number" id="quantity" name="quantity" min="1" value="1">
+
+      <button type="button" onclick="addToOrder()">Add to Order</button>
+    </form>
+  </section>
+
+  <!-- Order Summary Section -->
+  <section id="summary" class="summary">
+    <h2>Order Summary</h2>
+    <table id="order-summary">
+      <thead>
+        <tr>
+          <th>Dish</th>
+          <th>Quantity</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <p id="total">Total: $0</p>
+    <button id="checkout-button">Proceed to Payment</button>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
+  
+  
